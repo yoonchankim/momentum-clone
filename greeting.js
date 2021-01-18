@@ -31,7 +31,6 @@ function loadName() {
     paintGreeting(currentUser);
   }
 }
-
 function init() {
   loadName();
 }
