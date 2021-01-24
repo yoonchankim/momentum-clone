@@ -7,32 +7,52 @@
     <link rel="stylesheet" href="index.css"/>
 </head>
 <body>
+  <div id="no-media" class="find-media">
+    <span id="no-mobile">please use this for big screen</span>
+  </div>
+  <div class="weather-bar">
+    <h3>weather</h3>
+    <h3>bar</h3>
+  </div>
+  <div class="big-js-clock">
     <div class="js-clock">
-        <h1>00:00</h1>
+      <h1>00:00</h1>
     </div>
-    <form class="js-form-greeting form">
+  </div>
+  <div class="big-js-clock">
+    <div class="big-greeting">
+      <form class="js-form-greeting form">
         <input type="text" placeholder="What is your name"/>
-    </form>
-    <h4 class="js-greetings greetings"></h4>
-    <h1>Tasks</h1>
+      </form>
+      <h4 class="js-greetings greetings"></h4>
+    </div>
+  </div>
+    <h1 id="tasks">Tasks</h1>
 
     <form id="js-form">
       <input type="text" placeholder="Add task" />
     </form>
 
-    <div>
-      <h3>Pending</h3>
+    <div id="div-js-pending">
+      <h3 id="pending">Pending</h3>
       <ul id="js-pending"></ul>
     </div>
 
-    <div>
-      <h3>Finished</h3>
+    <div id="div-js-finished">
+      <h3 id="finished">Finished</h3>
       <ul id="js-finished"></ul>
+    </div>
+    <div class="span">click here to hide or show weather bar</div>
+    <div class="js-weather">
     </div>
     <script src="clock.js"></script>
     <script src="greeting.js"></script>
     <script src="todo.js"></script>
     <script src="bg.js"></script>
     <script src="weather.js"></script>
+    <script
+    src="https://kit.fontawesome.com/6478f529f2.js"
+    crossorigin="anonymous"
+  ></script>
 </body>
 </html>

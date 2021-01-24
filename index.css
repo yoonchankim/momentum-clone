@@ -1,5 +1,11 @@
 body{
   overflow: hidden;
+  height:100vh;
+  width:100vw;
+  margin:0;
+  display:flex;
+  align-items: center;
+  flex-direction: column;
   background-color:#95a5a6;
 }
 .form,
@@ -26,3 +32,139 @@ body{
   z-index:-1;
   animation:fadeIn 1s ease-in-out;
 }
+.js-weather{
+  position: absolute;
+  background-color: aqua;
+  border-bottom-right-radius:120px;
+  border-top-right-radius:120px;
+  width:178px;
+  height: 100%;
+  left:0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity:0;
+  font-size:20px;
+}
+.big-js-clock{
+  box-sizing: border-box;
+  padding:20px;
+  width:100%;
+  height:100px;
+  margin:0;
+  margin-bottom:30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom:20px;
+}
+.js-clock{
+  background-color:#3498db;
+  height:100%;
+  width:300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius:30px;
+}
+h4{
+  font-size:50px;
+  font-weight:700;
+  color: rgb(0, 255, 213);
+}
+.big-greeting{
+  width:800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100PX;
+  background-color: #ff6b6b;
+  box-sizing: border-box;
+  height:100px;
+}
+#js-form{
+  position: absolute;
+  left:280px;
+  top:390px;
+}
+#tasks{
+  position: absolute;
+  left:280px;
+  top:280px;
+}
+#div-js-pending,#div-js-finished{
+  position: absolute;
+  top:300px;
+  width:380px;
+  height:450px;
+  padding-top:30px;
+  padding-left:50px;
+  border-radius:10px;
+  border:solid black 2px;
+  box-sizing: border-box;
+  background-image:url(NOTE.png);
+} 
+#div-js-pending{
+  left:700px;
+}
+#div-js-finished{
+  left:1410px;
+}
+#finished,#pending{
+  font-size:30px;
+  font-size:600;
+}
+
+.span{
+  position: absolute;
+  bottom:10px;
+  color: #6c5ce7;
+  font-size:30px;
+  font-weight:700s;
+  display: flex;
+  align-items: center;
+}
+.weather-bar{
+  opacity:0;
+  position: absolute;
+  left:22px;
+  top:50px;
+  z-index:98;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.weather-bar h3{
+  margin:0;
+  font-size:30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#no-media {
+  position: absolute;
+  z-index: 100;
+  height: 100vh;
+  background-color: #6c5ce7;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  top: 0;
+  margin: 0;
+}
+
+@media screen and (min-width: 1500px) {
+  #no-mobile {
+    opacity:0;
+    display: none;
+  }
+  #no-media{
+    opacity:0;
+    display: none;
+  }
+}
+
